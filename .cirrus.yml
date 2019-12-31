@@ -12,7 +12,7 @@ task:
   pkginstall_script:
     - pkg install -y groff
   configure_script:
-    - echo "clang -O2 -Wall" > conf-cc
+    - echo "clang -O2 -Wall -Wshadow" > conf-cc
   compile_script:
     - make it man
   install_script:
